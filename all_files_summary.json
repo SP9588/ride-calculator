@@ -1,0 +1,20 @@
+{
+  "backend/main.mo": "Motoko actor implementing ride booking backend with OTP generation/verification, trip data storage (bookings and confirmedTrips maps), and fare calculation functions based on distance and time.",
+  "feature_evidence.json": "Feature evidence report documenting four implemented features: OTP verification form, trip details input, cost breakdown display, and transportation-themed UI design with their associated files and test IDs.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of frontend source files describing the booking flow components, styling system, React Query hooks, and layout structure.",
+  "frontend/index.css": "Tailwind CSS base styles defining OKLCH color system variables for light and dark modes with neutral grayscale theme (no warm earth tones despite documentation claims).",
+  "frontend/index.html": "HTML entry point for the Ride Calculator app with root div and module script reference to main.tsx.",
+  "frontend/src/App.tsx": "Root React component configuring TanStack Router with Layout wrapper and BookingFlow as the index route.",
+  "frontend/src/components/CostBreakdown.tsx": "React component displaying itemized fare breakdown with base fare ($50), distance charges ($1.00/km), time charges ($1.20/min), and total cost calculation matching backend formula.",
+  "frontend/src/components/Layout.tsx": "Main layout component with header (hero banner, car icon, app title), main content outlet, and footer with copyright and caffeine.ai attribution link.",
+  "frontend/src/components/OTPVerificationForm.tsx": "OTP verification form with 6-digit InputOTP component, displays generated OTP for demo, handles verification via useVerifyOTP hook with error/success states.",
+  "frontend/src/components/TripDetailsForm.tsx": "React form component for entering trip distance and time, with validation and error handling, that calls onSubmit callback with parsed numeric values.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an ICP backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication, managing login state, identity persistence, and delegation validation with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for backend operations including starting bookings, verifying OTP, calculating trip costs, and checking trip existence status.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a warm earth-toned color palette for light and dark modes, plus utility classes.",
+  "frontend/src/main.tsx": "Application entry point that sets up React Query client and Internet Identity provider, then renders the root App component.",
+  "frontend/src/pages/BookingFlow.tsx": "Multi-step booking flow component managing start, OTP verification, trip details entry, and cost summary steps with progress indicator and state management.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom color scheme using OKLCH, typography, animations, shadows, and extended theme properties for the transportation app UI.",
+  "project_state.json": "Project state file for a transportation/travel website called 'Ride Calculator' with OTP verification, distance/time-based pricing, and trip tracking features. Tracks 4 existing implemented features and 7 pending feature requests including OTP generation/verification and cost calculation systems."
+}

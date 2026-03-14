@@ -1,0 +1,177 @@
+{
+  "kind": "build_request",
+  "title": "Create transportation booking system with OTP verification and distance-based pricing",
+  "projectName": "Ride Calculator",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Implement OTP generation system that creates a unique 6-digit verification code for each trip booking request",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "generating an OTP code can be verified"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend generates a random 6-digit OTP code",
+        "OTP is stored with an expiration timestamp (5 minutes validity)",
+        "Each OTP is associated with a specific booking request"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Implement OTP verification system that validates user-entered codes before confirming trip bookings",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "OTP code can be verified"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend accepts OTP input and validates against stored code",
+        "Verification checks code match and expiration time",
+        "Failed verification returns clear error message",
+        "Successful verification marks booking as confirmed"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Create trip cost calculation system based on distance traveled and total time taken",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "cost and prices are calculated by the details like travelled distance by total time taken"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend calculates cost using distance (in kilometers) and time (in minutes)",
+        "Pricing formula includes base fare, per-kilometer rate, and per-minute rate",
+        "Cost calculation is performed after trip completion",
+        "Final price is returned with breakdown of charges"
+      ]
+    },
+    {
+      "id": "REQ-4",
+      "text": "Build trip tracking system that records distance traveled and time duration for each trip",
+      "target": "backend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "travelled distance by total time taken"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Backend stores trip start time and end time",
+        "Backend records total distance for each trip",
+        "Trip data is persisted and associated with booking",
+        "Distance and time data are used for cost calculation"
+      ]
+    },
+    {
+      "id": "REQ-5",
+      "text": "Create booking flow interface with OTP input form for trip verification",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "generating an OTP code can be verified"
+        ]
+      },
+      "acceptanceCriteria": [
+        "UI displays OTP input field after booking request",
+        "Form accepts 6-digit numeric code",
+        "Shows loading state during verification",
+        "Displays success or error message based on verification result"
+      ]
+    },
+    {
+      "id": "REQ-6",
+      "text": "Build trip details input form capturing distance and time information",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "details like travelled distance by total time taken"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Form includes fields for distance traveled (in kilometers)",
+        "Form includes fields for time taken (start and end time or duration)",
+        "Input validation ensures positive numbers for distance and time",
+        "Form submits data to backend for cost calculation"
+      ]
+    },
+    {
+      "id": "REQ-7",
+      "text": "Create cost display component showing price breakdown including distance charges, time charges, and total fare",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ],
+        "quotes": [
+          "cost and prices are calculated"
+        ]
+      },
+      "acceptanceCriteria": [
+        "UI displays itemized cost breakdown",
+        "Shows base fare, distance-based charges, and time-based charges separately",
+        "Displays total trip cost prominently",
+        "Updates dynamically when trip details change"
+      ]
+    },
+    {
+      "id": "REQ-8",
+      "text": "Design a clean, modern visual theme with transportation-focused aesthetics using warm earth tones and clear typography that emphasizes usability for travel booking interfaces",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-2"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Consistent color palette throughout the application",
+        "Typography is clear and legible for form inputs and pricing information",
+        "Layout feels intuitive for booking and verification workflows",
+        "Visual style reflects transportation and travel context"
+      ]
+    }
+  ],
+  "constraints": [
+    "OTP codes must expire after 5 minutes",
+    "Distance must be measured in kilometers",
+    "Time must be tracked in minutes",
+    "Cost calculation must be transparent with itemized breakdown"
+  ],
+  "nonGoals": [
+    "Real-time GPS tracking or live location services",
+    "Integration with third-party mapping APIs",
+    "Payment processing or transaction handling",
+    "Driver/vehicle assignment system",
+    "Multi-language support"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Hero banner showing modern transportation vehicle on a road with warm sunset lighting (hero-banner.dim_1200x400.png)",
+      "Icon representing OTP verification with shield and checkmark design (otp-icon.dim_128x128.png)",
+      "Icon showing distance calculation with road and distance marker (distance-icon.dim_128x128.png)"
+    ],
+    "edits": []
+  }
+}

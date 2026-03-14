@@ -1,0 +1,84 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-booking-flow-interface-with-otp-input-form-for-trip-verification",
+      "featureTitle": "Create booking flow interface with OTP input form for trip verification",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/OTPVerificationForm.tsx",
+        "frontend/src/pages/BookingFlow.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-5"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-build-trip-details-input-form-capturing-distance-and-time-information",
+      "featureTitle": "Build trip details input form capturing distance and time information",
+      "files": [
+        "frontend/src/components/TripDetailsForm.tsx",
+        "frontend/src/pages/BookingFlow.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-create-cost-display-component-showing-price-breakdown-including-distance-charges-time-charges-and-total-fare",
+      "featureTitle": "Create cost display component showing price breakdown including distance charges, time charges, and total fare",
+      "files": [
+        "frontend/src/components/CostBreakdown.tsx",
+        "frontend/src/pages/BookingFlow.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-design-a-clean-modern-visual-theme-with-transportation-focused-aesthetics-using-warm-earth-tones-and-clear-typography-that-emphasizes-usability-for-travel-booking-interfaces",
+      "featureTitle": "Design a clean, modern visual theme with transportation-focused aesthetics using warm earth tones and clear typography that emphasizes usability for travel booking interfaces",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/Layout.tsx",
+        "frontend/src/index.css",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-8"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

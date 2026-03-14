@@ -1,0 +1,11 @@
+{
+  "frontend/src/index.css": "Global styles with warm earth tone OKLCH color system (terracotta, amber, warm grays) for transportation theme, including light and dark mode variants with custom animations.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with transportation-themed warm earth tone colors, custom font families (Inter, Outfit), enhanced border radius, soft shadows, and custom animations for fade-in and slide-in effects.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration including startBooking (OTP generation), verifyOTP (OTP validation), calculateCost (fare calculation), and checkTripExists (trip status check).",
+  "frontend/src/components/Layout.tsx": "Main layout component with transportation-themed header featuring hero banner image, app branding with car icon, and footer with attribution link to caffeine.ai.",
+  "frontend/src/components/OTPVerificationForm.tsx": "OTP verification form component with 6-digit input using InputOTP component, displays generated OTP for demo, handles verification with loading states and error messages.",
+  "frontend/src/components/TripDetailsForm.tsx": "Trip details input form with distance (km) and time (minutes) fields, includes validation for positive numbers and submits data for cost calculation.",
+  "frontend/src/components/CostBreakdown.tsx": "Cost summary component displaying itemized fare breakdown including base fare, distance charges ($1.00/km), time charges ($1.20/min), and total fare with trip details.",
+  "frontend/src/pages/BookingFlow.tsx": "Main booking flow page orchestrating four-step process (start, verify OTP, enter details, view summary) with progress indicator and state management for the entire booking journey.",
+  "frontend/src/App.tsx": "Root application component with TanStack Router setup, defines route structure with Layout wrapper and BookingFlow as the index route."
+}
